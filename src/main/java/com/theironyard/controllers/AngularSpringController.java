@@ -24,6 +24,7 @@ public class AngularSpringController {
 
     @RequestMapping(path="/user", method = RequestMethod.POST)
     public void addUser(@RequestBody User user) {
+
         users.save(user);
     }
     @RequestMapping(path="/user/{id}", method = RequestMethod.PUT)
